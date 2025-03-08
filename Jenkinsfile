@@ -6,14 +6,14 @@ pipeline{
         stage('build'){
             steps{
                 script{
-                    sh 'Build in progress.'
+                    sh 'echo "Build in progress."'
                 }
             }
         }
      stage('test'){
             steps{
                 script{
-                    sh 'Jenkins_repo'
+                    sh 'echo "Jenkins_repo"'
                 }
             }
      }
