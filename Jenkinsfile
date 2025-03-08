@@ -10,6 +10,13 @@ pipeline{
                 }
             }
         }
+     stage('test'){
+            steps{
+                script{
+                    sh 'Jenkins_repo'
+                }
+            }
+     }
 
     }
 }
