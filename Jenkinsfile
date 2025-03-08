@@ -1,6 +1,6 @@
 pipeline{
     agent{
-        label any
+        label 'jenkins-node-aws'
     }
     stages{
         stage('build'){
