@@ -2,6 +2,9 @@ pipeline{
     agent any
 
         //label 'jenkins-node-aws'
+    tools {
+        maven 'Maven3' // Replace with the name you configured
+    }
         
     stages{
         stage('build'){
