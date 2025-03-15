@@ -1,0 +1,26 @@
+pipeline{
+    agent any
+
+        //label 'jenkins-node-aws'
+    tools {
+        maven 'Maven3' // Replace with the name you configured
+    }
+        
+    stages{
+        stage('build'){
+            steps{
+                script{
+                    sh 'mvn clean package'
+                }
+            }
+        }
+     stage('test'){
+            steps{
+                script{
+                    sh 'mvn test'
+                }
+            }
+     }
+
+    }
+}
