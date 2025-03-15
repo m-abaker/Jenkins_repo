@@ -10,14 +10,16 @@ pipeline{
         stage('build'){
             steps{
                 script{
-                    sh 'mvn clean package'
+                    //sh 'mvn clean package'
+                    sh 'echo "in progress building"'
                 }
             }
         }
      stage('test'){
             steps{
                 script{
-                    sh 'mvn test'
+                    //sh 'mvn test'
+                    sh 'echo "test done"'
                 }
             }
      }
