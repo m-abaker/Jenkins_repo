@@ -3,7 +3,7 @@ pipeline{
 
         //label 'jenkins-node-aws'
     tools {
-        maven 'Maven3' // Replace with the name you configured
+        //maven 'Maven3' // Replace with the name you configured
     }
         
     stages{
