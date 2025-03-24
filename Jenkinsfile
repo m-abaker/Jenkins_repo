@@ -2,9 +2,9 @@ pipeline{
     agent any
 
         //label 'jenkins-node-aws'
-    tools {
-        maven 'Maven3' // Replace with the name you configured
-    }
+   // tools {
+        //maven 'Maven3' // Replace with the name you configured
+   // }
         
     stages{
         stage('build'){
@@ -23,14 +23,14 @@ pipeline{
      }
 
     }
-post {
+/*post {
   success {
     slackSend channel: '#jenkins-project', color: 'warning', message: "Build successed- ${env.JOB_NAME} ${env.BUILD_NUMBER} (<${env.BUILD_URL}|Open>)", teamDomain: 'myproject-z6y6816', tokenCredentialId: 'Slack-notifi'
   }
    failure {
     slackSend channel: '#jenkins-project', color: 'warning', message: "Build failed- ${env.JOB_NAME} ${env.BUILD_NUMBER} (<${env.BUILD_URL}|Open>)", teamDomain: 'myproject-z6y6816', tokenCredentialId: 'Slack-notifi'
   }
-}
+}*/
 }
 
 
